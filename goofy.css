@@ -1,0 +1,77 @@
+[class] { box-sizing: border-box }
+.glade { border-color: mediumslateblue }
+.dance { border-color: rebeccapurple }
+.scene { background: rebeccapurple; color: #111 }
+::selection { background: darkviolet; color: lightsalmon }
+
+.goofy {
+  background-color: salmon;
+  background-image: linear-gradient(salmon, lightcoral);
+  color: #318;
+}
+
+.dippy {
+  background-color: cornflowerblue;
+  background-image: linear-gradient(cornflowerblue, mediumpurple);
+  color: #111;
+}
+
+.bling {
+  border-top-width: 1ex;
+  border-top-style: dashed;
+}
+
+:any-link {
+  color: inherit;
+  text-decoration-style: double;
+}
+
+:focus-within {
+  filter: sepia(10%);
+}
+
+:focus {
+  outline: thick groove;
+}
+
+.dawg {
+  box-sizing: border-box;
+  contain: style;
+  display: flow-root;
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  text-align: end;
+}
+
+.cool {
+  transform: rotate(180deg);
+}
+
+html {
+  font: max(2em, 6vw) sans-serif;
+  line-height: 1.618;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-wrap: anywhere;
+}
+
+cite,
+h1 {
+  margin: 0;
+  font: 2em sans-serif;
+}
+
+abbr {
+  font: 1em monospace;
+}
+
+@media (orientation: portrait) {
+  .dawg {
+    writing-mode: vertical-rl;
+    text-align: start;
+  }
+}
